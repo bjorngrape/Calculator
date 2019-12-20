@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<p>Inkomst</p>
+<p id="inkomstTotal"></p>
+
+<p>Kostnad</p>
+<p id="kostnadTotal"></p>
+
+<p>Summa</p>
+<p id="summaTotal"></p>
+
+<!-- Inmatning för beskrivning och summa -->
+<input type="text" id="description" placeholder="Description">
+<input type="number" id="value" placeholder="Value">
+
+<!-- Plus, minus, knapp -->
+<select class="selector">
+    <option>+</option>
+    <option>-</option>
+</select> 
+<button class="button">Add</button>
+
+<!-- Lista över inkomster och kostnader -->
+<ul id="inkomstLista">Lista över inkomster</ul>
+<ul id="kostnadsLista">Lista över kostnader</ul>
+
+</body>
+</html>
