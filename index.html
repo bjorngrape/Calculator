@@ -5,34 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 </head>
+
 <body>
+<!-- Totalsummor -->
+    <div class="body-container">
+        <h1>Hej! Fyll i vad du köpt eller sålt så sorterar jag det åt dig!</h1>
+        <h3>Inkomst</h3>
+            <div id="inkomstTotal"></div>
+        <h3>Kostnad</h3>
+            <div id="kostnadTotal"></div>
+        <h3>Summa</h3>
+            <div id="summaTotal"></div>
+    </div>
+    <br>
 
-<p>Inkomst</p>
-<p id="inkomstTotal"></p>
-
-<p>Kostnad</p>
-<p id="kostnadTotal"></p>
-
-<p>Summa</p>
-<p id="summaTotal"></p>
-
-<!-- Inmatning för beskrivning och summa -->
-<input type="text" id="description" placeholder="Description">
-<input type="number" id="value" placeholder="Value">
-
-<!-- Plus, minus, knapp -->
-<select class="selector">
-    <option>+</option>
-    <option>-</option>
-</select> 
-<button class="button">Add</button>
+<!-- Inmatning för beskrivning, värde, knapp -->
+    <div class="body-input">
+        <input type="text" id="description" placeholder="Produkt"></input>
+        <input type="number" id="value" placeholder="Pris"></input>
+        
+        <select class="selector">
+            <option>+</option>
+            <option>-</option>
+        </select>
+        <!-- <input type="button" class="button" value="Lägg till"> -->
+        <button class="button">Lägg till</button>
+    </div>
+    <br>
 
 <!-- Lista över inkomster och kostnader -->
-<ul id="inkomstLista">Lista över inkomster</ul>
-<ul id="kostnadsLista">Lista över kostnader</ul>
+    <div class="body-list" style="list-style-type:none">
+        <h3>Lista över försäljning</h3>
+        <div><li id="inkomstLista"></li></div>
+        <h3>Lista över inköp</h3>
+        <div><li id="kostnadsLista"></li></div>
+    </div>
 
 </body>
 </html>

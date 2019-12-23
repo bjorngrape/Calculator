@@ -14,10 +14,10 @@ const inkomstTotal = document.querySelector("#inkomstTotal");
 const kostnadTotal = document.querySelector("#kostnadTotal");
 const summaTotal = document.querySelector("#summaTotal");
 
-// När man klickar på knappen händer addInfo
+// Funktion som kör addInfo när knappen klickas på
 knappen.addEventListener("click" , addInfo);
 
-// Funktionen addInfo som körs när man klickar på knappen
+// Funktionen addInfo
 function addInfo() {
     const createLi = document.createElement("li");
     if (selector.selectedIndex == "0") {
